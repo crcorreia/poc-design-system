@@ -4,6 +4,8 @@ import styled from '@emotion/styled';
 import { darken, rgba } from 'polished';
 import { color, typography } from '../shared/styles';
 import { easing } from '../shared/animation';
+import { expect, userEvent, within } from '@storybook/test';
+import { StoryLinkWrapper } from '../LinkWrapper/StoryLinkWrapper';
 
 const Text = styled.span`
   display: inline-block;
@@ -34,7 +36,7 @@ const SIZES = {
 
 const StyledButton = styled.button`
   border: 0;
-  border-radius: 3em;
+  border-radius: 0.5em;
   cursor: pointer;
   display: inline-block;
   overflow: hidden;
@@ -419,4 +421,27 @@ Button.defaultProps = {
   containsIcon: false,
   size: SIZES.MEDIUM,
   ButtonWrapper: undefined,
+};
+
+/*
+ * New story using the play function.
+ * See https://storybook.js.org/docs/react/writing-stories/play-function
+ * to learn more about the play function.
+ */
+export const WithInteractions = {
+  args: {
+    appearance: 'primary',
+    href: 'http://storybook.js.org',
+    ButtonWrapper: StoryLinkWrapper,
+    children: 'Button',
+  },
+  play: async ({ canvasElement }) => {
+    // Assigns canvas to the component root element
+    const canvas = within(canvasElement);
+    await userEvent.click(canvas.getByRole('link'));
+    expect(canvas.getByRole('link')).toHaveAttribute(
+      'href',
+      'http://storybook.js.org',
+    );
+  },
 };
