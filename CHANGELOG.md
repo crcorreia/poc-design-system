@@ -2,14 +2,14 @@
 
 #### 🐛 Bug Fix
 
-- make Button pop [#1](https://github.com/crcorreia/poc-design-system/pull/1) (cesar.correia@capgemini.com [@crcorreia](https://github.com/crcorreia))
+- make Button pop [#1](https://github.com/crcorreia/poc-design-system/pull/1) (cesar.cra@gmail.com [@crcorreia](https://github.com/crcorreia))
 
 #### ⚠️ Pushed to `main`
 
-- Storybook deployment with GitHub action (cesar.correia@capgemini.com)
-- first commit (cesar.correia@capgemini.com)
+- Storybook deployment with GitHub action (cesar.cra@gmail.com)
+- first commit (cesar.cra@gmail.com)
 
 #### Authors: 2
 
 - [@crcorreia](https://github.com/crcorreia)
-- Correia (cesar.correia@capgemini.com)
+- Correia (cesar.cra@gmail.com)
