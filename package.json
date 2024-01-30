@@ -7,11 +7,11 @@
   "author": "cesar correia",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "license": "MIT",
   "files": [
     "dist/**/*",
     "README.md"
   ],
-  "license": "MIT",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
     "watch": "rollup --watch -c --bundleConfigAsCjs",

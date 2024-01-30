@@ -2,7 +2,6 @@
 const config = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
-    //'../src/Intro.mdx',
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-onboarding',
@@ -17,12 +16,12 @@ const config = {
   docs: {
     autodocs: 'tag',
   },
-  refs: {
+  /*refs: {
     'design-system': {
       title: 'My design system',
       //👇 The url provided by Chromatic when it was deployed
       url: 'https://www.chromatic.com/library?appId=65b7dbec56834291ff65d904&branch=main',
     },
-  },
+  },*/
 };
 export default config;
