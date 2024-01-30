@@ -12,4 +12,3 @@ export * from './Button';
 export * from './Icon';
 export * from './Link';
 export * from './LinkWrapper';
-export * from './stories/Header';
