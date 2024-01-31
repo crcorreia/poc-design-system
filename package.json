@@ -2,7 +2,7 @@
   "name": "crcorreia-poc-design-system",
   "version": "0.1.0",
   "private": false,
-  "description": "Primeira tentativa ",
+  "description": "",
   "repository": "https://github.com/crcorreia/poc-design-system",
   "author": "cesar correia",
   "main": "dist/cjs/index.js",

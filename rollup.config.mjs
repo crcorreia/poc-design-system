@@ -35,6 +35,7 @@ export default [
       commonjs(),
       terser(),
       babel({
+        babelHelpers: 'bundled',
         extensions: ['.js', '.jsx'],
         exclude: 'node_modules/**',
       }),
